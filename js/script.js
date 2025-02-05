@@ -1,3 +1,7 @@
+$( "#accordion" ).accordion({
+    heightStyle: "content",
+})
+
 $(".autoplay").slick({
     dots: false,
     infinite: true,

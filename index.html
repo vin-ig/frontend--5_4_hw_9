@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HomeWork 9</title>
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-1 2 3  4  5
+1 2 3 4 5
 4 8 16 24 48
 
 <nav class="navbar navbar-expand-lg bg-light px-3 mb-5">
@@ -124,76 +126,40 @@
         </div>
     </section>
 
-    <section class="faq pt-4 mb-5 d-flex flex-column align-items-center">
+    <section class="faq pt-4 px-3 mb-5 d-flex flex-column align-items-center">
         <h2 class="mb-5">Ответы на часто задаваемые вопросы</h2>
-        <div class="accordion w-75" id="accordionExample">
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        Собираете ли вы подарочные боксы?
-                    </button>
-                </h2>
-                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                        Да, у нас есть такая услуга. Мы можем собрать подарочный бокс на любой вкус, объем и стоимость!
-                    </div>
-                </div>
+        <div id="accordion" class="w-75 px-5">
+            <h3 class="p-4 rounded-3 bg-primary bg-gradient text-light fw-bold">Собираете ли вы подарочные боксы?</h3>
+            <div class="border border-0">
+                <p class="m-0">
+                    Да, у нас есть такая услуга. Мы можем собрать подарочный бокс на любой вкус, объем и стоимость!
+                </p>
             </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        Сколько у вас разновидностей чая?
-                    </button>
-                </h2>
-                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                        У нас более 48 различных сортов и видов чая!
-                    </div>
-                </div>
+            <h3 class="p-4 rounded-3 bg-primary bg-gradient text-light fw-bold">Сколько у вас разновидностей чая?</h3>
+            <div class="border border-0">
+                <p class="m-0">
+                    У нас более 48 различных сортов и видов чая!
+                </p>
             </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                        В какой срок осуществляется доставка?
-                    </button>
-                </h2>
-                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                        Любой заказ мы упакуем и подготовим к отправке в течение <strong>одного</strong> рабочего дня.
-                        Сроки доставки зависят от выбранного способа и вашего местоположения.
-                    </div>
-                </div>
+            <h3 class="p-4 rounded-3 bg-primary bg-gradient text-light fw-bold">В какой срок осуществляется доставка?</h3>
+            <div class="border border-0">
+                <p class="m-0">
+                    Сроки доставки зависят от выбранного способа и вашего местоположения.
+                </p>
             </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                        У вас обновляется ассортимент?
-                    </button>
-                </h2>
-                <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                        Конечно! Наиболее популярные виды чая в продаже есть всегда, но мы постоянно ищем что-то
-                        новое и хотим приятно удивить наших постоянных клиентов!
-                    </div>
-                </div>
+            <h3 class="p-4 rounded-3 bg-primary bg-gradient text-light fw-bold">У вас обновляется ассортимент?</h3>
+            <div class="border border-0">
+                <p class="m-0">
+                    Конечно! Наиболее популярные виды чая в продаже есть всегда, но мы постоянно ищем что-то новое и
+                    хотим приятно удивить наших постоянных клиентов!
+                </p>
             </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                        Какого объема у вас пачки чая?
-                    </button>
-                </h2>
-                <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                        Вы можете выбрать наиболее подходящие вам варианты фасовки чая из следующего ряда:
-                        <strong>100 гр, 150 гр, 200 гр, 500 гр.</strong>
-                    </div>
-                </div>
+            <h3 class="p-4 rounded-3 bg-primary bg-gradient text-light fw-bold">Какого объема у вас пачки чая?</h3>
+            <div class="border border-0">
+                <p class="m-0">
+                    Вы можете выбрать наиболее подходящие вам варианты фасовки чая из следующего ряда: <strong>100 гр,
+                    150 гр, 200 гр, 500 гр.</strong>
+                </p>
             </div>
         </div>
     </section>
@@ -241,8 +207,9 @@
 </footer>
 
 <script src="js/jquery-3.7.1.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
-<script src="js/slick.js"></script>
+<script src="js/slick.min.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>
