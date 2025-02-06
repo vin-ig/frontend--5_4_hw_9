@@ -25,7 +25,9 @@ $('.order button').click((event) => {
         return
     }
 
-    $('.order').css({display: 'none'}).html(`<div class="border border-primary rounded-4 p-5">Спасибо за заказ!</div>`)
+    $('.order form').css({display: 'none'}).after($(`
+        <h4 class="border border-primary rounded-4 p-5">Спасибо за заказ!</h4>
+    `))
 })
 
 
