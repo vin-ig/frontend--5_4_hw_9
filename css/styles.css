@@ -37,3 +37,9 @@
 .hvr-rectangle-out:before {
     background: var(--bs-btn-hover-bg)
 }
+
+
+/* Скрываем элементы до срабатывания анимации, чтобы не видеть их во время загрузки страницы */
+.wow {
+    visibility: hidden;
+}

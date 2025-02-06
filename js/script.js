@@ -36,6 +36,10 @@ $(document).ready(function() {
         `))
     })
 
+    $('.product-image-popup').magnificPopup({
+        type: 'image',
+    })
+
     $(".autoplay").slick({
         dots: false,
         infinite: true,
