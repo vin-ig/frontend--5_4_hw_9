@@ -8,11 +8,16 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/hover-min.css">
+
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-1 2 3 4 5
-4 8 16 24 48
+<div class=" wow animate__flipInX">
+    1 2 3 4 5
+    4 8 16 24 48
+</div>
 
 <nav class="navbar navbar-expand-lg bg-light px-3 mb-5">
     <a href="#" class="navbar-brand">
@@ -39,12 +44,12 @@
     </div>
     <form class="d-flex" role="search">
         <input class="form-control me-2" type="search" placeholder="Поиск чая" aria-label="Search">
-        <button class="btn btn-outline-primary px-4 py-1" type="submit">Найти</button>
+        <button class="btn btn-outline-primary px-4 py-1 hvr-rectangle-out" type="submit">Найти</button>
     </form>
 </nav>
 
 <main class="container pt-4">
-    <div class="content mb-4">
+    <section class="content mb-4 wow animate__fadeInRight">
         <div class="slider autoplay">
             <div>
                 <img src="assets/images/banner_1_1.png" class="d-block w-100" alt="Banner 1">
@@ -56,9 +61,9 @@
                 <img src="assets/images/banner_1_3.png" class="d-block w-100" alt="Banner 3">
             </div>
         </div>
-    </div>
+    </section>
 
-    <section class="products mb-5">
+    <section class="products mb-5 wow animate__fadeIn">
         <h2 class="text-center pt-5 pb-5 mb-1">Наши чайные коллекции</h2>
         <div class="row row-cols-1 row-cols-lg-2 row-cols-xxl-3 g-4">
             <div class="col d-flex justify-content-center">
@@ -68,7 +73,7 @@
                         <h5 class="card-title">Детокс чай лайм</h5>
                         <p class="card-text mb-4">Великолепный чай внесет в вашу жизнь яркие краски и вкус
                             расслабления</p>
-                        <a href="#" class="btn btn-primary w-50">Подробнее</a>
+                        <a href="#" class="btn btn-primary w-50 hvr-rectangle-out">Подробнее</a>
                     </div>
                 </div>
             </div>
@@ -79,7 +84,7 @@
                         <h5 class="card-title">Ягодный чай</h5>
                         <p class="card-text mb-4">Нотки ягод позволят вам расслабиться и насладиться великолепием этого
                             чая</p>
-                        <a href="#" class="btn btn-primary w-50">Подробнее</a>
+                        <a href="#" class="btn btn-primary w-50 hvr-rectangle-out">Подробнее</a>
                     </div>
                 </div>
             </div>
@@ -89,7 +94,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Цветочный чай</h5>
                         <p class="card-text mb-4">Душистые цветы создают невероятный аромат и наполняют вас энергией</p>
-                        <a href="#" class="btn btn-primary w-50">Подробнее</a>
+                        <a href="#" class="btn btn-primary w-50 hvr-rectangle-out">Подробнее</a>
                     </div>
                 </div>
             </div>
@@ -99,7 +104,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Очищающий чай</h5>
                         <p class="card-text mb-4">Бесподобный чай для получения утреннего заряда бодрости</p>
-                        <a href="#" class="btn btn-primary w-50">Подробнее</a>
+                        <a href="#" class="btn btn-primary w-50 hvr-rectangle-out">Подробнее</a>
                     </div>
                 </div>
             </div>
@@ -109,7 +114,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Кислый чай</h5>
                         <p class="card-text mb-4">Кислый чай для настоящих ценителей кислинки во время чаепития</p>
-                        <a href="#" class="btn btn-primary w-50">Подробнее</a>
+                        <a href="#" class="btn btn-primary w-50 hvr-rectangle-out">Подробнее</a>
                     </div>
                 </div>
             </div>
@@ -119,7 +124,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Лимонная мята</h5>
                         <p class="card-text mb-4">Смесь лимона с мятой сделает ваш день самым лучшим</p>
-                        <a href="#" class="btn btn-primary w-50">Подробнее</a>
+                        <a href="#" class="btn btn-primary w-50 hvr-rectangle-out">Подробнее</a>
                     </div>
                 </div>
             </div>
@@ -164,7 +169,7 @@
         </div>
     </section>
 
-    <section class="order pt-4 d-flex flex-column align-items-center">
+    <section class="order pt-4 d-flex flex-column align-items-center wow animate__flipInX">
         <h2 class="mb-5">Сделать заказ</h2>
         <form class="mt-2" action="#">
             <div class="row mb-3">
@@ -197,7 +202,7 @@
                     <input type="text" class="form-control" id="addressInput">
                 </div>
             </div>
-            <button type="button" class="btn btn-primary w-25 mt-2">Отправить</button>
+            <button type="button" class="btn btn-primary w-25 mt-2 hvr-rectangle-out">Отправить</button>
         </form>
     </section>
 </main>
@@ -210,6 +215,8 @@
 <script src="js/jquery-ui.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/slick.min.js"></script>
+<script src="js/wow.min.js"></script>
+
 <script src="js/script.js"></script>
 </body>
 </html>

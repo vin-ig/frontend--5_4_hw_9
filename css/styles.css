@@ -3,6 +3,7 @@
     --bs-nav-link-hover-color: #000000;
 }
 
+
 /* Аккордеон */
 .ui-accordion-header-icon {
     position: absolute;
@@ -24,4 +25,15 @@
 
 .ui-state-active .ui-icon {
     transform: rotate(180deg);
+}
+
+
+/* Hover */
+.btn:hover,
+.hvr-rectangle-out {
+    background: var(--bs-btn-bg);
+}
+
+.hvr-rectangle-out:before {
+    background: var(--bs-btn-hover-bg)
 }
