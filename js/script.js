@@ -2,6 +2,33 @@ $( "#accordion" ).accordion({
     heightStyle: "content",
 })
 
+const postCodeInput = $('#postCodeInput')
+const orderInputs = $('.order input')
+
+postCodeInput.on('input', function() {
+    let newValue = ''
+    for (let symbol of this.value) {
+        newValue += isNaN(parseInt(symbol)) ? '' : symbol
+    }
+    this.value = newValue.slice(0, 6)
+})
+
+$('.order button').click((event) => {
+    for (let i = 0; i < orderInputs.length; i++) {
+        if (!orderInputs.eq(i).val()) {
+            alert('Все поля должны быть заполнены!')
+            return
+        }
+    }
+    if (postCodeInput.val().length !== 6) {
+        alert('Почтовый индекс должен содержать 6 символов!')
+        return
+    }
+
+    $('.order').css({display: 'none'}).html(`<div class="border border-primary rounded-4 p-5">Спасибо за заказ!</div>`)
+})
+
+
 $(".autoplay").slick({
     dots: false,
     infinite: true,
