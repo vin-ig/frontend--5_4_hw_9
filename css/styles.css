@@ -1,11 +1,17 @@
+/* Цвет текста при наведении на меню */
 .nav-link {
     --bs-nav-link-hover-color: #000000;
 }
 
+/* Аккордеон */
 .ui-accordion-header-icon {
     position: absolute;
     right: 25px;
     top: 30px;
+}
+
+.ui-accordion .ui-accordion-content {
+    padding: 1em 2.2em 0.5em;
 }
 
 .ui-icon,
@@ -19,4 +25,3 @@
 .ui-state-active .ui-icon {
     transform: rotate(180deg);
 }
-
