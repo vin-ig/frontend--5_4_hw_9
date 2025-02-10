@@ -87,7 +87,7 @@ $(document).ready(function() {
     });
 
     // Переключатель задания
-    $('input[name="select-task"]').click(() => {
+    function changeTask () {
         if ($('#main-task').is(':checked')) {
             $('#main-task-section').css({display: 'block', visibility: 'visible'})
             $('#extra-task-section').css({display: 'none'})
@@ -95,5 +95,9 @@ $(document).ready(function() {
             $('#main-task-section').css({display: 'none'})
             $('#extra-task-section').css({display: 'block', visibility: 'visible'})
         }
-    })
+    }
+
+    changeTask()
+
+    $('input[name="select-task"]').click(changeTask)
 })
