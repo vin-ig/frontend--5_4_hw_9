@@ -5,10 +5,6 @@
 
 
 /* Аккордеон */
-#accordion {
-    max-width: 856px;
-}
-
 .ui-accordion-header-icon {
     position: absolute;
     right: 25px;
