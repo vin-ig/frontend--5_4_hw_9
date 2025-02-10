@@ -47,3 +47,21 @@
 .wow {
     visibility: hidden;
 }
+
+
+/* Стили для баннеров (hard level) */
+.hard-level .btn {
+    width: 170px;
+}
+
+.hard-banner-1 {
+    background-image: url("../assets/images/banner_2_1.png");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hard-banner-3 {
+    background-image: url("../assets/images/banner_2_3.png");
+    background-position: center;
+    background-repeat: no-repeat;
+}
